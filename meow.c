@@ -5,7 +5,7 @@ int main(int argc, char* argv[]){
     int c;
     FILE* fp;
     /* if file is passed concatenate */
-    if(argc > 2){
+    if(argc > 1){
         for(i=1; i<argc; i++){
           fp = fopen(argv[i], "r");
           if(fp == NULL){ printf("\"%s\" not found \n", argv[i]); continue; }
